@@ -11,3 +11,187 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.line-throught {
+  text-decoration: line-through;
+}
+.form-product input[type="radio"] {
+  display: none;
+}
+
+.form-product input[type="radio"]+label:before {
+  background-color : var(--bg-pseudo);
+  content: "";
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-right: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+
+ 
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+.form-product input[type="radio"]:checked + label:before {
+  border: 1px solid #b5b5b5;
+  border-color: #000;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+.form-product label {
+  display: flex;
+  align-items: center;
+  --bg-pseudo     : #fff;
+    cursor: pointer;
+}
+.w-10{
+  min-width: 35px;
+  font-size:14px;
+  margin: 0.4rem;
+}
+.w-10 label{
+  font-size:14px !important;
+  font-weight: 600;
+}
+.f-shrink{
+  flex-shrink: 1;
+}
+
+.skin-2 .num-in {
+	background: #FFFFFF;
+	border: 1px solid #dcdcdcdc;
+	border-radius: 0;
+	height: 45px;
+	width: 112px;
+  float: left;
+}
+
+.skin-2 .num-in	span {
+  width: 40%;
+  display: block;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.skin-2 .num-in span:before, .skin-2 .num-in span:after {
+  content: '';
+  position: absolute;
+  background-color: #667780;
+  height: 2px;
+  width: 10px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -5px;
+}
+
+.skin-2 .num-in span.plus:after {
+  transform: rotate(90deg);
+}
+
+.skin-2 .num-in input {
+		float: left;
+		width: 20%;
+		height: 100%;
+		border: none;
+		text-align: center;
+}
+.minus, .plus{
+  cursor: pointer;
+}
+.btn-check:active+.btn-outline-secondary, .btn-check:checked+.btn-outline-secondary, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show, .btn-outline-secondary:active{
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+
+}
+.btn-outline-secondary {
+  color: #6666;
+  border-color: #6666;
+  box-shadow: none !important;
+  border-radius: 0%;;
+}
+.btn-outline-secondary:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+.btn-check:active+.btn-outline-secondary:focus, .btn-check:checked+.btn-outline-secondary:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus, .btn-outline-secondary:active:focus {
+ box-shadow: none;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-secondary.dropdown-toggle:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+hr{
+  background-color: #6666;
+  height: 2px !important;
+  margin: 1.5rem 0;
+}
+.text-gris{
+  color:#6666
+}
+.font-600{
+  font-weight: 600;
+}
+.fixed-box{
+  display: flex;
+  height: 51px;
+  align-items: center;
+}
+.carousel-images [data-bs-target]{
+  opacity: 1 !important;
+}
+.img-carrousel{
+ width: 100%;  
+}
+.carousel-images .carousel-item{
+  height: 718px;
+}
+.btn-favourite{
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
+  border-radius: 0;
+}
+.btn-favourite:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+.btn-add-cart{
+  background-color: #000;
+  box-shadow: none !important;
+  border-radius: 0;
+  color: white !important;
+}
+.btn-add-cart:hover{
+  opacity: 0.8;
+}
+
+.texto-descripcion{
+  color: #696969;
+}
+
+.carousel-responsive .active{
+  background-color: #000 !important;
+  }
+
+.carousel-responsive button{
+border-radius: 50% !important;
+width: 10px !important;
+height: 10px !important;
+background-color: #6666 !important;
+margin: 0px 0.4rem !important;
+}
+.plus:hover , .minus:hover{
+  background-color: #dcdcdcdc;
+}
