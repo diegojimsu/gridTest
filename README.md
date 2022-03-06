@@ -1,4 +1,7 @@
+
 # Getting Started with Create React App
+
+Para la prueba se usó React para facilitar la conexión a la api y el manejo de estados mediante hooks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
